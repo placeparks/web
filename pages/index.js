@@ -33,6 +33,11 @@ import web6 from "../public/web6.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [isShown, setIsShown] = useState(false);
+
+function toggle(){
+  setIsShown(prevShown => !prevShown)
+}
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -64,10 +69,10 @@ export default function Home() {
           </nav>
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Hannan Shaukat aka Mirac.eth 
+            Hannan Shaukat aka Mirac.eth 
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              FULL STACK DEVELOPER
+            FULL STACK DEVELOPER
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               I am a Utility Developer with major Expertise in different Blockchain Technologies & respective Blockchain. Always interested in integration of real world with Blockchain. ALWAYS LEARNING & UNLEARNING!!
@@ -92,15 +97,16 @@ export default function Home() {
             As an experienced blockchain solution arrangements group, we offer assistance to organizations to boost productivity, nimbleness and security through custom blockchain advancement administrations.
             </p>
             </div>
-          <div className="lg:flex gap-10">
+          <div className="md:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={exchange} width={150} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold ">
                 Cryptocurrency exchanges
               </h3>
               <p className="py-2">
-              Our blockchain trade arrangement incorporates a full-scale cryptocurrency exchanging stage permitting for straightforward and unchanging NFT exchanges. The exceedingly versatile and solid cloud-based exchanging stage utilizes two-factor confirmation, cold capacity, archive confirmations, analytics instruments, multi-sign wallets, and comprehensive detailing among other highlights.
+              Our blockchain trade arrangement incorporates a full-scale cryptocurrency exchanging stage permitting for straightforward and unchanging NFT exchanges. {isShown && <span>The exceedingly versatile and solid cloud-based exchanging stage utilizes two-factor confirmation, cold capacity, archive confirmations, analytics instruments, multi-sign wallets, and comprehensive detailing among other highlights.</span>}
               </p>
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={toggle} >{isShown ? "Show Less" : "Show More"}</button>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={blockchain} width={100} height={100} />
@@ -108,22 +114,26 @@ export default function Home() {
                Public & Private Blockchain
               </h3>
               <p className="py-2">
-              We offer assistance companies set up Blockchain systems for their commerce and make secure decentralized databases to assist store information, oversee supply chains, handle exchanges, or any other trade needs that Blockchain can illuminate without jeopardizing security.
+              We offer assistance companies set up Blockchain systems for their commerce and make secure decentralized databases to assist store information, {isShown && <span> oversee supply chains, handle exchanges, or any other trade needs that Blockchain can illuminate without jeopardizing security. </span>}
+              <button>cool</button>
               </p>
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={toggle} >{isShown ? "Show Less" : "Show More"}</button>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={vault} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold">Decentralized Crypto Vaults</h3>
               <p className="py-2">
-              We offer arrangements for trades, institutional investors, and shippers seeking out for secure ways to execute and store huge volumes of crypto resources. This hinders security compromises on reserves indeed in case the genuine servers are compromised.
+              We offer arrangements for trades, institutional investors, and shippers seeking out for secure ways to execute and store huge volumes of crypto resources. {isShown && <span>This hinders security compromises on reserves indeed in case the genuine servers are compromised.</span>}
               </p>
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={toggle} >{isShown ? "Show Less" : "Show More"}</button>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={contracts} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold">Smart Contracts</h3>
               <p className="py-2">
-              We provide all sorts of shrewd contracts that ensure the astuteness of multi-party assentions and consequently enforce fixed commitments. To form beyond any doubt there are no flaws, misbehaviors and security gaps within the shrewd contract code, we perform full-scale pre-release utilitarian and non-functional testing.
+              We provide all sorts of shrewd contracts that ensure the astuteness of multi-party assentions and consequently enforce fixed commitments. To form beyond any doubt there are {isShown && <span>no flaws, misbehaviors and security gaps within the shrewd contract code, we perform full-scale pre-release utilitarian and non-functional testing.</span>}
               </p>
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={toggle} >{isShown ? "Show Less" : "Show More"}</button>
             </div>
             </div>
             <div className="lg:flex gap-10">
@@ -131,29 +141,33 @@ export default function Home() {
               <Image src={dapps} width={170} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold">Decentralized Apps (Dapps)</h3>
               <p className="py-2">
-              We offer scrambled peer-to-peer apps with no single point of disappointment and zero downtime. Dapps combine a number of interrelated keen contracts, joined together by a trade rationale and frontend. Our group builds total Dapp engineering, counting communication with oracles (information nourishes), and makes a comprehensive UX/UI plan.
+              We offer scrambled peer-to-peer apps with no single point of disappointment and zero downtime. Dapps combine a number of interrelated keen contracts, {isShown && <span>joined together by a trade rationale and frontend. Our group builds total Dapp engineering, counting communication with oracles (information nourishes), and makes a comprehensive UX/UI plan.</span>}
               </p>
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={toggle} >{isShown ? "Show Less" : "Show More"}</button>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={defi} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold">Decentralized (DeFi) Solutions</h3>
               <p className="py-2">
-              With broad involvement in blockchain and fintech, our group is well-equipped to create decentralized financing arrangements from scratch, empowering computerized exchanges between numerous parties. Our DeFi arrangements are greatly secure, auditable, and quick.
+              With broad involvement in blockchain and fintech, our group is well-equipped to create decentralized financing arrangements from scratch, empowering {isShown && <span>computerized exchanges between numerous parties. Our DeFi arrangements are greatly secure, auditable, and quick.</span>}
               </p>
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={toggle} >{isShown ? "Show Less" : "Show More"}</button>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={nft} width={150} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold">Non-Fungible Token And Marketplace Development</h3>
               <p className="py-2">
-              Our progressed NFT advancement administrations will assist you make special NFTs based on ERC-721 token guidelines. These NFTs can be doled out to work of art, collectibles, recordings, or any other computerized resources. Our blockchain masters are too experienced in building vigorous non-fungible token marketplaces that licenses clients to purchase, offer and investigate advanced resources.
+              Our progressed NFT advancement administrations will assist you make special NFTs based on ERC-721 token {isShown && <span>guidelines. These NFTs can be doled out to work of art, collectibles, recordings, or any other computerized resources. Our blockchain masters are too experienced in building vigorous non-fungible token marketplaces that licenses clients to purchase, offer and investigate advanced resources.</span>}
               </p>
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={toggle} >{isShown ? "Show Less" : "Show More"}</button>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={security} width={150} height={120} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold">Web3 Cybersecurity And Smart Contract Audit</h3>
               <p className="py-2">
-              Our comprehensive Web3 Cybersecurity and Shrewd Contract Review Administrations offer assistance companies dispatch and keep up complex blockchain applications. Send your savvy applications with the confirmation that your resources are totally protected from noxious assaults.
+              Our comprehensive Web3 Cybersecurity and Shrewd Contract Review Administrations offer assistance companies {isShown && <span>dispatch and keep up complex blockchain applications. Send your savvy applications with the confirmation that your resources are totally protected from noxious assaults.</span>}
               </p>
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={toggle} >{isShown ? "Show Less" : "Show More"}</button>
             </div>
           </div>
         </section>
@@ -264,7 +278,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 ">
             <a href="https://mirac-dex-4tiw.vercel.app/" target="_blank" rel="noreferrer">
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110 transition duration-300 ease-in-out"
                 width={"220px"}
                 height={"120px"}
                 layout="responsive"
@@ -275,7 +289,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
             <a href="https://week-7-nft-marketplace-iuf9.vercel.app/" target="_blank" rel="noreferrer">
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110 transition duration-300 ease-in-out"
                 width={"220px"}
                 height={"120px"}
                 layout="responsive"
@@ -286,7 +300,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
             <a href="https://week-7-nft-marketplace-iuf9.vercel.app/" target="_blank" rel="noreferrer">
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110 transition duration-300 ease-in-out"
                 width={"220px"}
                 height={"120px"}
                 layout="responsive"
