@@ -18,6 +18,16 @@ a {
 * {
   box-sizing: border-box;
 }
+#hashLink {
+  display: none;
+}
+
+#hashLink:target {
+  display: block;
+}
+#closelink{
+  display:none;
+}
 @font-face {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
