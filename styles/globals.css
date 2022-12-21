@@ -18,14 +18,36 @@ a {
 * {
   box-sizing: border-box;
 }
-#hashLink {
+
+#hashLink, #hashLink-1, #hashLink-2, #hashLink-3, #hashLink-4, #hashLink-5, #hashLink-6, #hashLink-7 {
   display: none;
 }
 
 #hashLink:target {
   display: block;
 }
-#closelink{
+#hashLink-1:target {
+  display: block;
+}
+#hashLink-2:target {
+  display: block;
+}
+#hashLink-3:target {
+  display: block;
+}
+#hashLink-4:target {
+  display: block;
+}
+#hashLink-5:target {
+  display: block;
+}
+#hashLink-6:target {
+  display: block;
+}
+#hashLink-7:target {
+  display: block;
+}
+#closelink, #closelink-1, #closelink-2, #closelink-3, #closelink-4, #closelink-5, #closelink-6, #closelink-7{
   display:none;
 }
 @font-face {
