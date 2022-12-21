@@ -28,7 +28,7 @@ import web1 from "../public/project1.PNG";
 import web2 from "../public/project2.PNG";
 import web3 from "../public/project3.PNG";
 import web4 from "../public/tenzies.PNG";
-import web5 from "../public/web5.png";
+import web5 from "../public/meme.PNG";
 import web6 from "../public/web6.png";
 
 
@@ -110,26 +110,25 @@ export default function Home() {
                Public & Private Blockchain
               </h3>
               <p className="py-2">
-              We offer assistance companies set up Blockchain systems for their commerce and make secure decentralized databases to assist store information, <p id="hashLink"> oversee supply chains, handle exchanges, or any other trade needs that Blockchain can illuminate without jeopardizing security. </p>
-              <button>cool</button>
+              We offer assistance companies set up Blockchain systems for their commerce and make secure decentralized databases to assist store information, <p id="hashLink-1"> oversee supply chains, handle exchanges, or any other trade needs that Blockchain can illuminate without jeopardizing security. </p>
               </p>
-              <a href="#hashLink" className="mr-2 text-blue-600">Expand</a><a href='#closelink' className="text-blue-600">hide</a>
+              <a href="#hashLink-1" className="mr-2 text-blue-600">Expand</a><a href='#closelink-1' className="text-blue-600">hide</a>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={vault} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold">Decentralized Crypto Vaults</h3>
               <p className="py-2">
-              We offer arrangements for trades, institutional investors, and shippers seeking out for secure ways to execute and store huge volumes of crypto resources. <p id="hashLink">This hinders security compromises on reserves indeed in case the genuine servers are compromised.</p>
+              We offer arrangements for trades, institutional investors, and shippers seeking out for secure ways to execute and store huge volumes of crypto resources. <p id="hashLink-2">This hinders security compromises on reserves indeed in case the genuine servers are compromised.</p>
               </p>
-              <a href="#hashLink" className="mr-2 text-blue-600">Expand</a><a href='#closelink' className="text-blue-600">hide</a>
+              <a href="#hashLink-2" className="mr-2 text-blue-600">Expand</a><a href='#closelink-2' className="text-blue-600">hide</a>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={contracts} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold">Smart Contracts</h3>
               <p className="py-2">
-              We provide all sorts of shrewd contracts that ensure the astuteness of multi-party assentions and consequently enforce fixed commitments. To form beyond any doubt there are<p id="hashLink"> no flaws, misbehaviors and security gaps within the shrewd contract code, we perform full-scale pre-release utilitarian and non-functional testing.</p>
+              We provide all sorts of shrewd contracts that ensure the astuteness of multi-party assentions and consequently enforce fixed commitments. To form beyond any doubt there are<p id="hashLink-3"> no flaws, misbehaviors and security gaps within the shrewd contract code, we perform full-scale pre-release utilitarian and non-functional testing.</p>
               </p>
-              <a href="#hashLink" className="mr-2 text-blue-600">Expand</a><a href='#closelink' className="text-blue-600">hide</a>
+              <a href="#hashLink-3" className="mr-2 text-blue-600">Expand</a><a href='#closelink-3' className="text-blue-600">hide</a>
             </div>
             </div>
             <div className="lg:flex gap-10">
@@ -137,33 +136,33 @@ export default function Home() {
               <Image src={dapps} width={170} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold">Decentralized Apps (Dapps)</h3>
               <p className="py-2">
-              We offer scrambled peer-to-peer apps with no single point of disappointment and zero downtime. Dapps combine a number of interrelated keen contracts, <p id="hashLink">joined together by a trade rationale and frontend. Our group builds total Dapp engineering, counting communication with oracles (information nourishes), and makes a comprehensive UX/UI plan.</p>
+              We offer scrambled peer-to-peer apps with no single point of disappointment and zero downtime. Dapps combine a number of interrelated keen contracts, <p id="hashLink-4">joined together by a trade rationale and frontend. Our group builds total Dapp engineering, counting communication with oracles (information nourishes), and makes a comprehensive UX/UI plan.</p>
               </p>
-              <a href="#hashLink" className="mr-2 text-blue-600">Expand</a><a href='#closelink' className="text-blue-600">hide</a>
+              <a href="#hashLink-4" className="mr-2 text-blue-600">Expand</a><a href='#closelink-4' className="text-blue-600">hide</a>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={defi} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold">Decentralized (DeFi) Solutions</h3>
               <p className="py-2">
-              With broad involvement in blockchain and fintech, our group is well-equipped to create decentralized financing arrangements from scratch, empowering <p id="hashLink">computerized exchanges between numerous parties. Our DeFi arrangements are greatly secure, auditable, and quick.</p>
+              With broad involvement in blockchain and fintech, our group is well-equipped to create decentralized financing arrangements from scratch, empowering <p id="hashLink-5">computerized exchanges between numerous parties. Our DeFi arrangements are greatly secure, auditable, and quick.</p>
               </p>
-              <a href="#hashLink" className="mr-2 text-blue-600">Expand</a><a href='#closelink' className="text-blue-600">hide</a>
+              <a href="#hashLink-5" className="mr-2 text-blue-600">Expand</a><a href='#closelink-5' className="text-blue-600">hide</a>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={nft} width={150} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold">Non-Fungible Token And Marketplace Development</h3>
               <p className="py-2">
-              Our progressed NFT advancement administrations will assist you make special NFTs based on ERC-721 token <p id="hashLink">guidelines. These NFTs can be doled out to work of art, collectibles, recordings, or any other computerized resources. Our blockchain masters are too experienced in building vigorous non-fungible token marketplaces that licenses clients to purchase, offer and investigate advanced resources.</p>
+              Our progressed NFT advancement administrations will assist you make special NFTs based on ERC-721 token <p id="hashLink-6">guidelines. These NFTs can be doled out to work of art, collectibles, recordings, or any other computerized resources. Our blockchain masters are too experienced in building vigorous non-fungible token marketplaces that licenses clients to purchase, offer and investigate advanced resources.</p>
               </p>
-              <a href="#hashLink" className="mr-2 text-blue-600">Expand</a><a href='#closelink' className="text-blue-600">less</a>
+              <a href="#hashLink-6" className="mr-2 text-blue-600">Expand</a><a href='#closelink-6' className="text-blue-600">less</a>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={security} width={150} height={120} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold">Web3 Cybersecurity And Smart Contract Audit</h3>
               <p className="py-2">
-              Our comprehensive Web3 Cybersecurity and Shrewd Contract Review Administrations offer assistance companies <p id="hashLink">dispatch and keep up complex blockchain applications. Send your savvy applications with the confirmation that your resources are totally protected from noxious assaults.</p>
+              Our comprehensive Web3 Cybersecurity and Shrewd Contract Review Administrations offer assistance companies <p id="hashLink-7">dispatch and keep up complex blockchain applications. Send your savvy applications with the confirmation that your resources are totally protected from noxious assaults.</p>
               </p>
-              <a href="#hashLink" className="mr-2 text-blue-600">Expand</a><a href='#closelink' className="text-blue-600">hide</a>
+              <a href="#hashLink-7" className="mr-2 text-blue-600">Expand</a><a href='#closelink-7' className="text-blue-600">hide</a>
             </div>
           </div>
         </section>
@@ -320,13 +319,15 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1">
+            <a href="https://meme-generator-six-beta.vercel.app/" target="_blank" rel="noreferrer">
               <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
+               className="rounded-lg object-cover hover:scale-110 transition duration-300 ease-in-out"
+               width={"220px"}
+               height={"120px"}
+               layout="responsive"
                 src={web5}
               />
+              </a>
             </div>
            
           </div>
